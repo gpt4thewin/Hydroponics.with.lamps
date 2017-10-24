@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>WM Hydroponics with lamps</name>
+  <author>Wishmaster</author>
+  <targetversion>0.17.1557</targetversion>
+  <description>
+&lt;color=orange&gt;&lt;b&gt;Requires HugsLib.&lt;/b&gt;&lt;/color&gt; 
+
+&lt;b&gt;&lt;size=15&gt;&lt;color=orange&gt;&lt;b&gt;Vanilla hydroponics bassin with built in sunlamps&lt;/b&gt;&lt;/color&gt; &lt;/size&gt;&lt;/b&gt;
+		
+Vanilla hydroponics only cover its own tiles.
+Sunlamps turn off at night, thus power use decreases.
+The sunlamp power use is based on the vanilla's sunlamp power use per tiles.
+
+Also features to set a default crop for a given plant grower building ('ponics, plant pot, VG stuff...).
+
+&lt;b&gt;!!! EXPERIMENTAL FEATURE !!!&lt;/b&gt;
+
+Generic injector for lamps on non-vanilla plant growers.
+	
+  </description>
+	<url>https://ludeon.com/forums/index.php?topic=27315.0</url>
+</ModMetaData>

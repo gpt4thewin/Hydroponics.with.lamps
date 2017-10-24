@@ -1,0 +1,94 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A9D1D3B-2A57-4237-9DB8-9A4BA88C4A57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WM.AllInOnePonics</RootNamespace>
+    <AssemblyName>WM Revamped Ponics</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Mods\WM Revamped Ponics\Assemblies</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>"D:\jeux\RimWorld\bin\RimWorld_debug\Mods\WM Revamped Ponics\deploy.cmd"</command>
+          <externalConsole>True</externalConsole>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>Mods\WM Revamped Ponics\Assemblies</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>"D:\jeux\RimWorld\bin\RimWorld_debug\Mods\WM Revamped Ponics\deploy.cmd"</command>
+          <externalConsole>True</externalConsole>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="HugsLib">
+      <HintPath>..\HugsLib\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>..\HugsLib\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\RimWorld\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mods\WM Revamped Ponics\About\About.xml" />
+    <None Include="Mods\WM Revamped Ponics\About\version.xml" />
+    <None Include="Mods\WM Revamped Ponics\Defs\Buildings_Production.xml" />
+    <None Include="Mods\WM Revamped Ponics\Defs\Items_MinimumSunLamp.xml" />
+    <None Include="Mods\WM Revamped Ponics\Languages\English\Keyed\Keys.xml" />
+    <None Include="Mods\WM Revamped Ponics\Textures\Things\Items\MinimumSunLamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="source\ModControler.cs" />
+    <Compile Include="source\Utils.cs" />
+    <Compile Include="source\Comp_BuiltInSunlamps.cs" />
+    <Compile Include="source\CompProperties_BuiltInSunlamps.cs" />
+    <Compile Include="source\Comp_DayNightSwitch.cs" />
+    <Compile Include="source\CompProperties_DayNightSwitch.cs" />
+    <Compile Include="source\Comp_DefaultPlantSetter.cs" />
+    <Compile Include="source\CompProperties_DefaultPlantSetter.cs" />
+    <Compile Include="source\Config.cs" />
+    <Compile Include="source\MiniSunlamp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mods\" />
+    <Folder Include="Mods\WM Revamped Ponics\" />
+    <Folder Include="Mods\WM Revamped Ponics\About\" />
+    <Folder Include="Mods\WM Revamped Ponics\Defs\" />
+    <Folder Include="Mods\WM Revamped Ponics\Languages\" />
+    <Folder Include="Mods\WM Revamped Ponics\Assemblies\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

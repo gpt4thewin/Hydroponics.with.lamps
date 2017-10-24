@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<SetDefaultPonicsPlant>Set default for this building</SetDefaultPonicsPlant>
+
+	<!--	Settings -->
+
+	<InjectDefaultPlantSetter>Use default plant setter</InjectDefaultPlantSetter>
+	<InjectDefaultPlantSetter_desc>REQUIRES RESTART - EXPERIMENTAL\n.Turn off to remove the default plant setter option. Use in case of issues.</InjectDefaultPlantSetter_desc>
+	
+	<InjectBuiltinSunlamps>Inject sunlamps in growers.</InjectBuiltinSunlamps>
+	<InjectBuiltinSunlamps_desc>REQUIRES RESTART - EXPERIMENTAL\n.This will add built-in sunlamps from the mod to every plant growers from other mods (like VG).</InjectBuiltinSunlamps_desc>
+	<MessageDefaultCropSet>[{0}] default crop set for [{1}]</MessageDefaultCropSet>
+</LanguageData>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef>
+		<defName>MinimumSunLamp</defName>
+		<thingClass>WM.AllInOnePonics.MiniSunlamp</thingClass>
+		<label>minimum sun lamp</label>
+		<category>Item</category>
+		<description>One tile sun lamp.</description>
+		<graphicData>
+			<texPath>Things/Items/MinimumSunLamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+			<shadowData>
+				<volume>(0.1, 0.2, 0.1)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.0</MarketValue>
+		</statBases>
+		<useHitPoints>false</useHitPoints>
+		<tradeability>Never</tradeability>
+		<altitudeLayer>Item</altitudeLayer>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>2.0</overlightRadius>
+				<glowRadius>1</glowRadius>
+				<glowColor>(370,370,370,0)</glowColor>
+			</li>
+		</comps>
+		<selectable>false</selectable>
+	</ThingDef>
+</Defs>
