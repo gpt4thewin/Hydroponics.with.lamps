@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--I know it's not brand new def patching.-->
-<ThingDefs>
+<Defs>
 	<ThingDef ParentName="BuildingBase">
 		<defName>HydroponicsBasin_AllInOne</defName>
 		<label>Hydroponics basin (lamps)</label>
@@ -58,4 +58,4 @@
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>Production</designationCategory>
 	</ThingDef>
-</ThingDefs>
+</Defs>

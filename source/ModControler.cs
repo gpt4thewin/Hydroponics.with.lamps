@@ -186,7 +186,7 @@ namespace WM.AllInOnePonics
 			forGrower.building.defaultPlantToGrow = plantDef;
 			worldData.defaultPonicsPlant[forGrower] = plantDef;
 
-			Messages.Message(string.Format("MessageDefaultCropSet".Translate(), plantDef.label, forGrower.label), MessageSound.Benefit);
+			Messages.Message(string.Format("MessageDefaultCropSet".Translate(), plantDef.label, forGrower.label), MessageTypeDefOf.PositiveEvent);
 		}
 
 		internal class WorldDataStore : UtilityWorldObject
