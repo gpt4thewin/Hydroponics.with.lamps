@@ -19,7 +19,7 @@
 			<MarketValue>0.0</MarketValue>
 		</statBases>
 		<useHitPoints>false</useHitPoints>
-		<tradeability>Never</tradeability>
+		<tradeability>None</tradeability>
 		<altitudeLayer>Item</altitudeLayer>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
