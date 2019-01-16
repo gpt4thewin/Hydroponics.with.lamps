@@ -1,8 +1,8 @@
-## RimWorld Hydroponics with lamps Mod (A18)
+## RimWorld Hydroponics with lamps Mod
 
 ### Discontinued project
 
-I am done with RimWorld. The project is not beeing updated anymore.
+I am done with RimWorld. The project is not being updated anymore.
 If you are interested in maintaining the mod, feel free to text me.
 
 ### About
