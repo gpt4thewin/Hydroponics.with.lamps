@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>WM Hydroponics with lamps</name>
+  <name>WM Hydroponics with lamps for 1.0</name>
   <author>Wishmaster</author>
-  <targetVersion>1.0.0</targetVersion>
+  <supportedVersions>
+    <li>1.1</li>
+  </supportedVersions>
   <description>
 &lt;color=orange&gt;&lt;b&gt;Requires HugsLib.&lt;/b&gt;&lt;/color&gt; 
 
