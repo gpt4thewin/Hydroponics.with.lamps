@@ -2,3 +2,6 @@ deploy.cmd
 obj/
 .vs/
 Mods/WM Revamped Ponics/Assemblies/
+Mods/WM Revamped Ponics/v1.0/Assemblies/
+Mods/WM Revamped Ponics/v1.1/Assemblies/
+packages/*
